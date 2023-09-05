@@ -45,7 +45,8 @@ var_dump(), printf(), এবং sprintf() হল পিএইচপি ভাষ
     <?php
         $number = 9;
         $location = "ঢাকা";
-        printf("আমি প্রায় %d বছর ধরে %s থাকি।", $number, $location);
+        printf("আমি প্রায় %d বছর ধরে %s থাকি।", $number, $location); 
+        //output : আমি প্রায় 9 বছর ধরে ঢাকা থাকি।
         echo"<br/>";
         echo"<br/>";
 
@@ -54,6 +55,7 @@ var_dump(), printf(), এবং sprintf() হল পিএইচপি ভাষ
         $number = 10.45678;
         $name = "রাহিম";
         printf("স্বাগতম, %s! আপনি %.2f ডলার প্রদান করতে চান।", $name, $number);
+        //output : স্বাগতম, রাহিম! আপনি 10.46 ডলার প্রদান করতে চান।
         echo"<br/>";
         echo"<br/>";
     ?>
