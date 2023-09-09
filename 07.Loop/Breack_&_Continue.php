@@ -6,7 +6,7 @@
     //     //     break;
     //     // };
 
-        if($i == 5 || $i == 8 ){
+        if($i == 5 ||  $i == 8 ){
             continue; // Data Dhow korba na.
         };
         echo $i . "<br/>";
