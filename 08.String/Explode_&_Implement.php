@@ -16,6 +16,6 @@
 
      echo "<pre>";
          print_r($implode);
-     echo "</pre>";
+     echo "</pre>"; 
 
 ?>
