@@ -15,7 +15,7 @@
         echo "Hello! $firstName $LastName<br/>";
     }
     name("Ahsanul_Kabir" );
-    name(  "Satu");
+    name( "Satu");
 
 
 ?>
