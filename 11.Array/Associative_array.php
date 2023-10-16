@@ -25,4 +25,10 @@
     }
 
     //  প্রতিটি কী এবং মানের জন্য একটি লাইন প্রিন্ট করা হবে।
+    //OutPut
+    // 35 John is 35 years old.
+    // Jane is 30 years old.
+    // Jim is 40 years old.
+
+
 ?>
