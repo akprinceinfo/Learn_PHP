@@ -41,11 +41,11 @@
         array(4, 'John 4', 'Bangla 2',77),
     );
 
-    echo "<table style='border: 1px solid black'>";
-    
-        for ($row=0; $row<2; $row++){
+    echo "<table style='border: 1px solid black'> <tr><th>Id</th><th>Name</th><th>Subject</th></tr>";
+
+        for ($row=0; $row<4; $row++){
             echo "<tr>";
-                for($col = 0; $col < 2; $col++){
+                for($col = 0; $col < 3; $col++){
                     echo '<td>' . $infos[$row][$col] .'</td>';
                 }
             echo "</tr>";
