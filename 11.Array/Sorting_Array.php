@@ -20,3 +20,27 @@
     print_r($numbers);  // Outputs: 22, 11, 6, 4, 2
 
 ?>
+
+
+<!-- asort(): অ্যারেটি আরোহী ক্রমে সর্ট করে, কিংবা অ্যাসোসিয়েটিভ অ্যারের মান অনুসারে। -->
+
+<?php
+
+    $ages = array("Karim" => 35, "Rahim" => 25, "Salam" => 30);
+    asort($ages);
+    print_r($ages);  // Outputs: Rahim 25, Salam 30, Karim 35
+
+
+?>
+
+
+<!-- ksort(): অ্যাসোসিয়েটিভ অ্যারেটি কি অনুসারে সর্ট করে। -->
+
+<?php
+
+    $ages = array("Karim" => 35, "Rahim" => 25, "Salam" => 30);
+    ksort($ages);
+    print_r($ages);  // Outputs: Karim 35, Rahim 25, Salam 30
+
+
+?>
