@@ -18,11 +18,15 @@
     $array1 = array( "Apple", "banana","Coconut");
     $array2 = array( "grape", "orange", "banana");
     $array3 = array("F-Number" => 50, "S-Number" =>20, "L-Number" =>30);
+    $array4 = array("F-Number" => 50, "Se-Number" =>20, "L-Number" =>30);
     $result = array_merge( $array1, $array2, $array3 );
+    $result = array_merge_recursive( $array1, $array2, $array3,$array4 );
 
     echo "<pre>";
         print_r($result);
     echo "</pre>";
+
+    // আবার জখন Array ইনডেক্স এর মান যদি একই হয় তখন array_marge_recursive ব্যবহার করলে সকল মান পাওয়া যায় ।
 
 
     //----------OutPut-------------
