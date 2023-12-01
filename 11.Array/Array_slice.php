@@ -11,13 +11,9 @@ $length (ঐচ্ছিক): উপাদানগুলির মোট সং
 $preserve_keys (ঐচ্ছিক): এটি বলে দেয় যদি উপাদানগুলির ইনডেক্সগুলি রাখতে হয় তবে true, অন্যথায় false। এটি ডিফল্টভাবে false। -->
 
 <?php
-$array = array("a", "b", "c", "d", "e");
-
-// সোর্স অ্যারে থেকে উপাদানগুলির সিকুয়েন্স নেওয়া
-
-$slice = array_slice($array, 1, 3);
-
-print_r($slice);
+    $array = array("a", "b", "c", "d", "e");
+    $slice = array_slice($array, 1, 3);
+    print_r($slice);
 ?>
 <!-- 
 এই উদাহরণে, array_slice($array, 1, 3) সোর্স অ্যারে থেকে ইনডেক্স 1 থেকে শুরু হয়ে 3 টি উপাদান নেবে, তা হলো ["b", "c", "d"]।
