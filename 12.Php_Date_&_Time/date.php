@@ -7,6 +7,11 @@ string date ( string $format [, int $timestamp = time() ] )
 
 এখানে,
 
+d - Represents the day of the month (01 to 31)
+m - Represents a month (01 to 12)
+Y - Represents a year (in four digits)
+l (lowercase 'L') - Represents the day of the week
+
 $format: এটি হলো ফরম্যাট স্ট্রিং, যেটি অনুসারে তারিখ এবং সময় প্রদান করা হবে। এটি অতিরিক্ত এবং ঐচ্ছিক। বিভিন্ন ফরম্যাটের জন্য বিভিন্ন চিহ্নের সম্বোধন আছে, যেমন Y হলো সাল, m হলো মাস, d হলো দিন, H হলো 24-ঘণ্টা সময় আকারে ঘড়ি, i হলো মিনিট, s হলো সেকেন্ড, ইত্যাদি।
 $timestamp (ঐচ্ছিক): এটি হলো একটি Unix টাইমস্ট্যাম্প, যেটি ব্যবহার করে স্পষ্ট একটি তারিখ এবং সময় প্রদান করতে ব্যবহৃত হয়। এটি অতিরিক্ত এবং ঐচ্ছিক।
 -->
