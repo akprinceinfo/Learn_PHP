@@ -1,0 +1,24 @@
+
+
+
+php Include_once & Require_once কিভাবে কাজ করে ?
+
+
+include_once এবং require_once হলো include এবং require এর একই ধরণের ফাংশনগুলি, তবে এটি একই ফাইলটি একাধিক বার ইনক্লুড বা রিকোয়ার করা হবে না। এর ফলে, এটি একই ফাইলটি একাধিক বার ইনক্লুড বা রিকোয়ার হলে একবার মাত্র ইনক্লুড বা রিকোয়ার হবে।
+
+
+
+<?php
+    include_once 'header.php';
+    include_once 'main_content.php';
+    include_once 'footer.php';
+?>
+
+<?php
+    require_once 'header.php';
+    require_once 'main_content.php';
+    require_once 'footer.php';
+?>
+
+উদাহরণস্বরূপ, আপনি একটি ফাইলকে include_once বা require_once ব্যবহার করে একাধিক বার ইনক্লুড বা রিকোয়ার করতে চাইলে, তাদের একবারই শুধু একবারই ইনক্লুড বা রিকোয়ার হবে। এটি সহজেই সিস্টেমের স্ট্যাবিলিটি বা কোড মোডুলারিটি বৃদ্ধি করতে সাহায্য করতে পারে, যখন একই ফাইল বা লাইব্রেরি একাধিক স্থানে ব্যবহৃত হতে পারে।
+
