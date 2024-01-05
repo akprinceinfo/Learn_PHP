@@ -1,0 +1,28 @@
+
+.container{
+    width: 650px;
+    margin: 100px auto;
+    padding: 50px;
+    
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 20px;
+   height: 30px;
+    border: 1px solid #0f0f0f;
+}
+
+form label{
+    padding-bottom: 10px;
+}
+
+input.btn{
+    cursor: pointer;
+    background-color: #6c3c99;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #7512d1;
+    color: aliceblue;
+}
