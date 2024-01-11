@@ -7,6 +7,7 @@
                $lname = $_POST['lname'];
                $email = $_POST['email'];
                $birthday = $_POST['birthday'];
+               $cars = $_POST['cars'];
 
                $error = [];
 
@@ -21,6 +22,9 @@
                };
                if(empty($fname)){
                   $error['birthday'] = "Please, Insert Your birthday.";
+               };
+               if(empty($cars)){
+                  $error['cars'] = "Please, Insert Your cars.";
                };
 
             }
@@ -54,7 +58,7 @@
                 }
               ?>
               </span>
-               <br><br>
+               <br><br>       
               <label for="lname">Last name:</label>
               <input type="text" id="lname" name="lname" value="<?php 
                   if(isset($fname)) { echo $fname;}
@@ -92,7 +96,7 @@
               </span>
               <br><br>
               <label for="cars">Choose a car:</label>
-              <select id="cars">
+              <select id="cars" name="cars">
                 <option value="volvo">Volvo</option>
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
@@ -102,5 +106,23 @@
             </fieldset>
         </form>
       </div>
+
+                <table>
+                  <tr>
+                     <th>First Name</th>
+                     <th>Last Name</th>
+                     <th>Email</th>
+                     <th>Date</th>
+                     <th>cars</th>
+                  </tr>
+                  <tr>
+                     <td><?php echo $fname ;?></td>
+                     <td> <?php echo $lname ; ?></td>
+                     <td> <?php echo $email;?> </td>
+                     <td> <?php echo $birthday ;?></td>
+                     <td> <?php echo $cars ;?></td>
+                  </tr>
+                </table>
+
    </body>
 </html>
