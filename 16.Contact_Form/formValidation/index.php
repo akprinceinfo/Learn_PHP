@@ -1,5 +1,15 @@
 
 <?php 
+
+    // ============  Heaking Error solving =======================
+    // function clean($data){    
+    //     $data_a = trim($data);
+    //     $data_b = htmlspecialchars($data_a);
+    //     $data_c = stripcslashes($data_b);
+    //     return $data_c;
+    // }
+
+
     // if ($_SERVER['REQUEST_METHOD'] == "POST") {
     //     echo $_POST['name'];
     // }
@@ -7,6 +17,9 @@
     // if(isset($_POST['dataSend'])){ && $_SERVER['REQUEST_METHOD'] == "POST"
 
     if(isset($_POST['dataSend'])){
+
+        // $fName = clean($_POST['fName']);
+
         $fName = $_POST['fName'];
         $email = $_POST['email'];
 
@@ -44,7 +57,39 @@
     <div class="container">
         <div class="row  min-vh-100 d-flex">
             <div class="col-md-6 m-auto border rounded shadow border-1">
-               
+               <form action="<?= $_SERVER['PHP_SELF'] ;?>" method="POST">
+                    <div class="mb-3 form-floating ">
+
+                        <!-- Fist Name Input -->
+                        <div>
+                            <label for="fName" class="form-label"> Your Name</label>
+                            <input type="text" name="fName" id="" placeholder="Your Name"    
+                            class="form-control  <?= isset($errName) ? 'is-invalid' : 
+                            'null' ;?> <?= isset($crrName) ? 'is-valid ' : 'null' ;?>" 
+                           value = "<?= $fName ?? null ?>">
+                            
+                            <div class="invalid-feedback"> <?= $errName ?? null ?> </div>
+                            <div class="valid-feedback"> <?= $crrName ?? null ?> </div>
+                           
+                        </div>
+                        <!-- Email Input -->
+                        <div>
+                            <label for="email" class="form-label"> Your Email</label>
+                            <input type="text" name="email" id="" placeholder="Your Email"    
+                            class="form-control  <?= isset($errEmail) ? 'is-invalid' : 
+                            'null' ;?> <?= isset($crrEmail) ? 'is-valid ' : 'null' ;?>" 
+                           value = "<?= $email ?? null ?>">
+                            
+                            <div class="invalid-feedback"> <?= $errEmail ?? null ?> </div>
+                            <div class="valid-feedback"> <?= $crrEmail ?? null ?> </div>
+                           
+                        </div>
+
+                        <input type="submit" name="dataSend" value="Submit" class="btn     
+                        btn-success btn-lg mt-3">
+                    </div>
+                    
+                </form>
 
                
             </div>
