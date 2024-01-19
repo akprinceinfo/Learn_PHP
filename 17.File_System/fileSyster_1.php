@@ -19,6 +19,17 @@
         echo "File Not Found";
     }
 
+    // is_executable()  //File Checker
+    //is_link()  // link checker
+    // is_readable // File Read kora jai nake check kora hoi
+    // is_uploaded_file()  // File Upload kena check kora hoi
+    // is_writable()  // Laka jabe kena check kora hoi
+
+    if (is_executable($file)) {
+        echo "Yes, it is Exe";
+    }else{
+        echo "no";
+    }
 
 
 
