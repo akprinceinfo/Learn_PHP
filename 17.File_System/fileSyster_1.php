@@ -9,6 +9,15 @@
     //echo filetype ('assect'); // File Type Checker
     //echo realpath($file);
 
+    
+    if (file_exists($file)) {
+        // echo readfile($file);
+        //copy($file, 'copyfole.php');
+        //rename('copyfole.php','rename.php');
+        //unlink('rename.php'); => Delete
+    }else{
+        echo "File Not Found";
+    }
 
 
 
