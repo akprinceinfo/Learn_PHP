@@ -1,0 +1,17 @@
+[
+    {
+        "pname": "opi",
+        "pdes": "Hellow pds opi",
+        "price": 101
+    },
+    {
+        "pname": "Abir",
+        "pdes": "Hellow pds Abiri",
+        "price": 201
+    },
+    {
+        "pname": "Rofik",
+        "pdes": "Hellow pds Rofik",
+        "price": 301
+    }
+]
