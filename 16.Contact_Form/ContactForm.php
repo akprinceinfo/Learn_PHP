@@ -14,13 +14,13 @@
                if(empty($fname)){
                   $error['fname'] = "Please, Insert Your fname.";
                };
-               if(empty($fname)){
+               if(empty($lname)){
                   $error['lname'] = "Please, Insert Your lname.";
                };
-               if(empty($fname)){
+               if(empty($email)){
                   $error['email'] = "Please, Insert Your email.";
                };
-               if(empty($fname)){
+               if(empty($birthday)){
                   $error['birthday'] = "Please, Insert Your birthday.";
                };
                if(empty($cars)){
